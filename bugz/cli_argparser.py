@@ -313,6 +313,10 @@ def make_arg_parser():
                                help='restrict by version (one or more)')
     search_parser.add_argument('-w', '--whiteboard',
                                help='status whiteboard')
+    search_parser.add_argument('--creation-time',
+                               help='created at this time or later')
+    search_parser.add_argument('--last-change-time',
+                               help='modified at this time or later')
     search_parser.add_argument('--show-status',
                                action='store_true',
                                help='show status of bugs')
